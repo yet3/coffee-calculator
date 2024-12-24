@@ -2,9 +2,25 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
+    "esModuleInterop": true,
     "paths": {
-      "@/*": [
-        "./*"
+      "@common/*": [
+        "./src/common/*"
+      ],
+      "@modules/*": [
+        "./src/modules/*"
+      ],
+      "@contexts/*": [
+        "./src/contexts/*"
+      ],
+      "@lib/*": [
+        "./src/lib/*"
+      ],
+      "@stores/*": [
+        "./src/stores/*"
+      ],
+      "@typings/*": [
+        "./src/typings/*"
       ]
     }
   },
