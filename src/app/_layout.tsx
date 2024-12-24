@@ -43,7 +43,7 @@ export default function RootLayout() {
 	useEffect(() => {
 		let isMobileAdsStartCalled = false;
 		const init = async () => {
-			setCanShowAds(true);
+			setCanShowAds(false);
 
 			try {
 				const { canRequestAds } = await AdsConsent.gatherConsent();
