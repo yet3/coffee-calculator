@@ -9,14 +9,7 @@ export const ConsiderSupportingLink = () => {
 	const { canShowAds } = useCanShowAds();
 
 	if (!canShowAds) {
-		return (
-			<UiText
-				color={THEME.bgContent}
-				size={FontSize.lg}
-				content="Thank you for supporting the app :)"
-				alignText="center"
-			/>
-		);
+		return null
 	}
 
 	return (
